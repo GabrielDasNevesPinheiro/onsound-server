@@ -1,0 +1,1 @@
+declare type Search = "album" | "artist" | "playlist" 
