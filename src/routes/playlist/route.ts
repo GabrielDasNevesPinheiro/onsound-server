@@ -14,6 +14,9 @@ const post = (req: Request<{}, {}, Playlist>, res: Response) => {
 
     try {
         const data = req.body;
+        data.id = `${Date.now()}`;
+
+        console.log(data);
 
         if (!data.name) return res.status(400).json({ message: "Playlist name required." });
 
